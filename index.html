@@ -10,12 +10,17 @@
     <title>OpenCV.js WebAPI</title>
   </head>
   <body>
-
-    <img id="imageSrc" alt="No Image" />
-    <input type="file" id="fileInput" name="file" />
     <button type="button" id="circlesButton" class="btn btn-primary">Circle Detection</button>
-    <canvas id="imageCanvas" ></canvas>
-    <a href="#" id="downloadButton">Download Image</a>
+    <div class="row">
+      <div class="col-md-6">
+        <img id="imageSrc" alt="No Image" style="width:600px"/>
+        <input type="file" id="fileInput" name="file" />
+      </div>
+      <div class="col-md-6">
+        <canvas id="imageCanvas"></canvas>
+        <a href="#" id="downloadButton">Download Image</a>
+      </div>
+    </div>
 
     <script async src="assets/scripts/js/opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
     <script type="text/javascript">
