@@ -14,21 +14,34 @@
       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Spatial Filters
         <span class="caret"></span></button>
         <ul class="dropdown-menu">
-          <li><a href="#" id="mean">Mean</a></li>
-          <li><a href="#" id="gauss">Gauss</a></li>
+          <li><a href="#" id="blur">Blur (Average)</a></li>
+          <li><a href="#" id="gaussian">Gaussian Blur</a></li>
+          <li><a href="#" id="median">Median Blur</a></li>
+          <li><a href="#" id="bilateral">Bilateral Filter</a></li>
+          <li><a href="#" id="laplacian">Laplacian</a></li>
           <li><a href="#" id="sobelX">Sobel X</a></li>
           <li><a href="#" id="sobelY">Sobel Y</a></li>
-          <li><a href="#" id="laplacian">Laplacian</a></li>
         </ul>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        <img id="imageSrc" alt="No Image" style="width:600px"/>
+      <div class="col-md-12">
         <input type="file" id="fileInput" name="file" />
       </div>
+    </div>
+    <div class="row">
       <div class="col-md-6">
+        <img id="imageSrc" src="assets/img/emptyCanvas.png" alt="No Image" style="width:500px"/>
+      </div>
+      <div class="col-md-6">
+        <img id="blankCanvas" src="assets/img/blankCanvas.png" style="display:none;">
         <canvas id="outputCanvas"></canvas>
-        <a href="#" id="downloadButton">Download Image</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-primary" id="downloadButton">Download Image</button>
       </div>
     </div>
 

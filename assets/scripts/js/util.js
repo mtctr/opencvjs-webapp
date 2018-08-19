@@ -1,7 +1,11 @@
 document.body.classList.add("loading");
+document.getElementById('downloadButton').style.visibility = 'hidden';
 
 function onOpenCvReady() {
   document.body.classList.remove("loading");
+  let blankCanvas = document.getElementById('blankCanvas');
+  let blank = cv.imread("blankCanvas");
+  cv.imshow('outputCanvas', blank);
 }
 
 let imgElement = document.getElementById('imageSrc');
@@ -13,7 +17,7 @@ inputElement.onchange = function(event) {
 
 imgElement.onload = function() {
   let image = cv.imread(imgElement);
-  cv.imshow('outputCanvas', image);
+  //cv.imshow('outputCanvas', image);
   image.delete();
 };
 
