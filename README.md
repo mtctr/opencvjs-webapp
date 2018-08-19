@@ -6,5 +6,5 @@ Web app to assist teachers in digital image processing classes
 ## Spatial Filters:
 - Mean
 - Gauss
-- Edge Detection (Vertical & Horizontal)
+- Sobel Edge Detection (Vertical & Horizontal)
 - Laplacian
