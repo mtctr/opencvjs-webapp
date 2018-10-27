@@ -22,3 +22,12 @@ body.loading {
 body.loading .modal {
     display: block;
 }
+
+.graph-container{
+    position:relative;
+    overflow:hidden;
+    widows: 800px;
+    height: 600px;
+    background:url('../img/grid.gif');
+    cursor:default;
+}
